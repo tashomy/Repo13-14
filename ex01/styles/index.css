@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  display: flex;
+  position: relative;
+}
+
+.box {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.background {
+  opacity: 0;
+  width: 100%;
+  height: calc(100% - 5px);
+  position: absolute;
+  top: 0;
+}
+
+.background:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.figure {
+  position: relative;
+}
+
+.figure h1 {
+  position: absolute;
+  bottom: 10%;
+  opacity: 1;
+  left: 0;
+  z-index: 5;
+  color: #fff;
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+}
